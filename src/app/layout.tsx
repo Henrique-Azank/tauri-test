@@ -1,11 +1,13 @@
+import Styles from "./page.module.scss";
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={Styles.MainBody}>{children}</body>
     </html>
-  )
+  );
 }

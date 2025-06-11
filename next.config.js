@@ -14,6 +14,14 @@ const nextConfig = {
   },
   // Configure assetPrefix or else the server won't properly resolve your assets.
   assetPrefix: isProd ? undefined : `http://${internalHost}:3000`,
+
+  // Remove the small dev indicator overlay
+  devIndicators: false,
+
+  // Implement Sass
+  sassOptions: {
+    implementation: "sass-embedded",
+  },
 };
 
 export default nextConfig;
