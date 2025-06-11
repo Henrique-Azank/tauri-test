@@ -17,11 +17,6 @@ const nextConfig = {
 
   // Remove the small dev indicator overlay
   devIndicators: false,
-
-  // Implement Sass
-  sassOptions: {
-    implementation: "sass-embedded",
-  },
 };
 
 export default nextConfig;

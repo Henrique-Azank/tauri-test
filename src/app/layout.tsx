@@ -1,5 +1,7 @@
-import Styles from "./page.module.scss";
+// Component dependencies
+import Styles from "./layout.module.scss";
 
+// Main layout
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={Styles.MainBody}>{children}</body>
+      <body className={Styles.MainLayout}>{children}</body>
     </html>
   );
 }
